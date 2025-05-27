@@ -1,5 +1,8 @@
+
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+window.Webflow = window.Webflow || [];
+window.Webflow.push(() => {
+  document.addEventListener("DOMContentLoaded", function () {
   const tabComponent = document.querySelector(".home-sol-tab");
   const tabLinks = Array.from(document.querySelectorAll(".sol-tab-link"));
   const tabPanes = Array.from(document.querySelectorAll(".sol-tab_pane"));
@@ -112,5 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   initObserver();
+});
 });
 </script>
